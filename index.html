@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Region-Specific Microglial Immune Activation in Alzheimer’s Disease</title>
+    <meta name="description" content="Research manuscript hub for single-cell RNA-seq analysis of microglial activation in Alzheimer's and Parkinson's disease.">
+    <link rel="stylesheet" href="styles.css?v=final-polish1">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="?tab=findings" aria-label="Research home" data-tab="findings">
+        <span class="brand-mark"></span>
+        <span>MTG Microglia Study</span>
+      </a>
+      <nav class="nav" aria-label="Primary" role="tablist">
+        <a href="?tab=findings" role="tab" aria-selected="true" aria-controls="findings" data-tab="findings">Findings</a>
+        <a href="?tab=evidence" role="tab" aria-selected="false" aria-controls="evidence" data-tab="evidence">Evidence</a>
+        <a href="?tab=methods" role="tab" aria-selected="false" aria-controls="methods" data-tab="methods">Methods</a>
+        <a href="?tab=figures" role="tab" aria-selected="false" aria-controls="figures" data-tab="figures">Figures</a>
+        <a href="?tab=manuscript" role="tab" aria-selected="false" aria-controls="manuscript" data-tab="manuscript">Manuscript</a>
+        <a href="?tab=references" role="tab" aria-selected="false" aria-controls="references" data-tab="references">References</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero tab-panel" aria-labelledby="page-title" data-panel="findings">
+        <img src="assets/neuro-map.png" alt="Abstract microglial cell network and transcriptomic data traces" class="hero-media">
+        <div class="hero-copy">
+          <p class="kicker">Single-cell RNA sequencing analysis</p>
+          <h1 id="page-title">Region-Specific Microglial Immune Activation in Alzheimer’s Disease</h1>
+          <p class="author-line">Research by Abhirup Mukherjee</p>
+          <p class="lead">A structured research hub for the manuscript analyzing microglial transcriptional resilience and immune pathway activity in the middle temporal gyrus, with comparisons across Alzheimer’s and Parkinson’s disease contexts.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="assets/manuscript.pdf" download>Download PDF</a>
+            <a class="button ghost" href="?tab=evidence" data-tab="evidence">View Evidence Map</a>
+          </div>
+        </div>
+        <aside class="study-facts" aria-label="Study facts">
+          <div>
+            <span class="fact-value">40K+</span>
+            <span class="fact-label">microglial cells</span>
+          </div>
+          <div>
+            <span class="fact-value">36,412</span>
+            <span class="fact-label">expressed genes</span>
+          </div>
+          <div>
+            <span class="fact-value">5%</span>
+            <span class="fact-label">mitochondrial cutoff</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro-grid tab-panel" aria-labelledby="research-question" data-panel="findings">
+        <div>
+          <p class="section-label">Research Question</p>
+          <h2 id="research-question">How do microglia in the middle temporal gyrus respond to neurodegeneration?</h2>
+        </div>
+        <div class="intro-copy">
+          <div class="hypothesis-card">
+            <p class="section-label">Hypothesis</p>
+            <p>Microglia maintain cellular integrity in the Middle Temporal Gyrus in neurodegeneration, but still show immune pathway activation.</p>
+          </div>
+          <p>The manuscript frames Alzheimer’s and Parkinson’s disease as neurodegenerative disorders with cell-type-specific transcriptional changes. It focuses on microglia in the middle temporal gyrus, a region relevant to semantic memory and early amyloid deposition, to determine whether disease produces broad reprogramming or regional resilience.</p>
+          <p>The site organizes the manuscript around three scientific layers: biological context, computational evidence, and interpretive findings. This makes the work easier to scan for reviewers, mentors, and readers who want to move from hypothesis to data to conclusions.</p>
+        </div>
+      </section>
+
+      <section class="section tab-panel" id="findings" aria-labelledby="findings-title" role="tabpanel" data-panel="findings">
+        <div class="section-heading">
+          <p class="section-label">Core Findings</p>
+          <h2 id="findings-title">A concise map from result to interpretation</h2>
+        </div>
+        <div class="finding-grid">
+          <article class="finding-card">
+            <span class="tag microglia">Microglia</span>
+            <h3>Immune pathways are enriched</h3>
+            <p>Upregulated microglial genes show enrichment in immune-related pathways, including leukocyte-mediated immunity and innate immune response.</p>
+          </article>
+          <article class="finding-card">
+            <span class="tag neuron">Neurons</span>
+            <h3>Synaptic processes shift under stress</h3>
+            <p>Neuronal gene set enrichment highlights synaptic plasticity, vesicle docking, exocytosis, transport, and action potential propagation.</p>
+          </article>
+          <article class="finding-card">
+            <span class="tag qc">Quality Control</span>
+            <h3>MTG microglia show strong data integrity</h3>
+            <p>Microglial cells average 2,706 detected genes and 3,538 UMIs per cell, with mitochondrial UMI fraction far below the exclusion threshold.</p>
+          </article>
+          <article class="finding-card">
+            <span class="tag subtype">Subtypes</span>
+            <h3>UMAP identifies ten microglial subclusters</h3>
+            <p>Leiden clustering and UMAP visualization indicate transcriptionally distinct microglial subtypes with donor overlap across the dataset.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section evidence-section tab-panel" id="evidence" aria-labelledby="evidence-title" role="tabpanel" data-panel="evidence" hidden>
+        <div class="section-heading">
+          <p class="section-label">Evidence Architecture</p>
+          <h2 id="evidence-title">Categorized by disease, cell type, and analytical layer</h2>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter evidence cards">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="microglia">Microglia</button>
+          <button class="filter" type="button" data-filter="neurons">Neurons</button>
+          <button class="filter" type="button" data-filter="methods">Methods</button>
+        </div>
+        <div class="evidence-grid">
+          <article class="evidence-card" data-category="microglia">
+            <span class="eyebrow">GSEA</span>
+            <h3>Microglial immune activation</h3>
+            <p>Upregulated gene sets emphasize immune activation, while downregulated sets point to impaired cytokine and leukocyte regulation.</p>
+            <dl>
+              <div><dt>Diseases</dt><dd>Alzheimer’s, Parkinson’s</dd></div>
+              <div><dt>Threshold</dt><dd>FDR &lt; 0.05</dd></div>
+            </dl>
+          </article>
+          <article class="evidence-card" data-category="neurons">
+            <span class="eyebrow">GSEA</span>
+            <h3>Neuronal signaling disruption</h3>
+            <p>Neuron-enriched pathways connect disease stress to synaptic plasticity, vesicle docking, neurotransmitter transport, and exocytosis.</p>
+            <dl>
+              <div><dt>Diseases</dt><dd>Alzheimer’s, Parkinson’s</dd></div>
+              <div><dt>Layer</dt><dd>Pathway activity</dd></div>
+            </dl>
+          </article>
+          <article class="evidence-card" data-category="microglia">
+            <span class="eyebrow">Differential Expression</span>
+            <h3>Broader microglial gene spread</h3>
+            <p>Microglial volcano analysis shows broader differential expression than neurons, including genes connected to inflammatory signaling and cell connectivity.</p>
+            <dl>
+              <div><dt>Effect size</dt><dd>1</dd></div>
+              <div><dt>Adjusted p-value</dt><dd>0.05</dd></div>
+            </dl>
+          </article>
+          <article class="evidence-card" data-category="neurons">
+            <span class="eyebrow">Differential Expression</span>
+            <h3>Narrow neuronal distribution</h3>
+            <p>Neuronal volcano plots show limited gene alteration, with manuscript examples including MALAT1, IL1RAPL1, DANT2, SNAP25, and RASGRF2.</p>
+            <dl>
+              <div><dt>Cell type</dt><dd>Neurons</dd></div>
+              <div><dt>View</dt><dd>Volcano plot</dd></div>
+            </dl>
+          </article>
+          <article class="evidence-card" data-category="methods">
+            <span class="eyebrow">Quality Control</span>
+            <h3>Cell-level filtering</h3>
+            <p>Cells were evaluated using n_genes_by_counts, total_counts, and mitochondrial UMI fraction to remove low-quality observations.</p>
+            <dl>
+              <div><dt>Mean genes/cell</dt><dd>2,706</dd></div>
+              <div><dt>Mean UMIs/cell</dt><dd>3,538</dd></div>
+            </dl>
+          </article>
+          <article class="evidence-card" data-category="methods">
+            <span class="eyebrow">UMAP + Leiden</span>
+            <h3>Subtype structure</h3>
+            <p>Dimensionality reduction and Leiden clustering identify ten microglial subtypes and show donor-level overlap after integration.</p>
+            <dl>
+              <div><dt>Resolution</dt><dd>~0.5</dd></div>
+              <div><dt>Subtypes</dt><dd>10</dd></div>
+            </dl>
+          </article>
+        </div>
+        <div class="research-figure-grid">
+          <article class="research-figure wide">
+            <div class="figure-copy">
+              <p class="section-label">Figure 1</p>
+              <h3>Gene Set Enrichment Analysis</h3>
+              <p>GO Biological Process enrichment separates immune pathway activity in microglia from synaptic and transport pathway changes in neurons.</p>
+              <a class="text-link" href="assets/gsea-final.pdf" target="_blank" rel="noreferrer">Open original PDF</a>
+            </div>
+            <img src="assets/gsea-final.png" alt="Gene set enrichment analysis panels for microglia and neurons">
+          </article>
+          <article class="research-figure wide">
+            <div class="figure-copy">
+              <p class="section-label">Figure 2</p>
+              <h3>Differential Expression Volcano Plot</h3>
+              <p>The original volcano figure is paired with an interactive Plotly view of highlighted gene/protein markers. Hover over a point in the Plotly chart to see its marker name, cell type, regulation direction, and approximate plotted values.</p>
+              <a class="text-link" href="assets/volcano-final.pdf" target="_blank" rel="noreferrer">Open original PDF</a>
+            </div>
+            <img src="assets/volcano-final.png" alt="Static volcano plots for neurons and microglia">
+          </article>
+          <article class="research-figure interactive-figure">
+            <div class="figure-copy">
+              <p class="section-label">Interactive Volcano</p>
+              <h3>Neuron and Microglia Marker Views</h3>
+              <p>Neuron and microglia markers are shown as separate interactive volcano plots. Hover over any dot to see the gene name, cell type, regulation direction, and approximate plotted values.</p>
+            </div>
+            <div class="volcano-split">
+              <div id="neuron-volcano-plot" class="plotly-panel" aria-label="Interactive neuron volcano plot"></div>
+              <div id="microglia-volcano-plot" class="plotly-panel" aria-label="Interactive microglia volcano plot"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section logic-section tab-panel" aria-labelledby="logic-title" data-panel="evidence" hidden>
+        <div class="section-heading">
+          <p class="section-label">Logical Representation</p>
+          <h2 id="logic-title">From biological question to publication-ready evidence</h2>
+        </div>
+        <ol class="logic-flow">
+          <li>
+            <span>01</span>
+            <div>
+              <h3>Define disease context</h3>
+              <p>Alzheimer’s disease, Parkinson’s disease, and control comparisons establish the neurodegenerative frame.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Separate cell-type evidence</h3>
+              <p>Microglia and neurons are analyzed independently so immune and synaptic mechanisms are not collapsed into one summary.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>Layer computational methods</h3>
+              <p>GSEA, differential expression, QC, clustering, annotation, and disease-control UMAP views each answer a different question.</p>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <h3>Interpret regional resilience</h3>
+              <p>The final synthesis argues that MTG microglia preserve structural and transcriptional stability while showing immune activation signatures.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section methods-section tab-panel" id="methods" aria-labelledby="methods-title" role="tabpanel" data-panel="methods" hidden>
+        <div class="section-heading">
+          <p class="section-label">Methods</p>
+          <h2 id="methods-title">Computational workflow</h2>
+        </div>
+        <div class="method-grid">
+          <div class="method-step">
+            <span>Data</span>
+            <h3>SEA-AD and CellxGene</h3>
+            <p>Public single-cell RNA-seq data from middle temporal gyrus microglia, including more than 40,000 cells and 36,412 expressed genes.</p>
+          </div>
+          <div class="method-step">
+            <span>Filtering</span>
+            <h3>Quality control</h3>
+            <p>Cells were filtered using duplicated UMI removal, detected gene counts, total UMI counts, and mitochondrial UMI fraction.</p>
+          </div>
+          <div class="method-step">
+            <span>Pathways</span>
+            <h3>Gene set enrichment</h3>
+            <p>GO Biological Process enrichment was performed using ranked differential expression statistics and an FDR cutoff of 0.05.</p>
+          </div>
+          <div class="method-step">
+            <span>Clusters</span>
+            <h3>Scanpy, UMAP, Leiden</h3>
+            <p>Preprocessing, highly variable gene selection, dimensionality reduction, Leiden clustering, and donor integration were used to visualize subtype structure.</p>
+          </div>
+        </div>
+        <section class="pipeline-panel" aria-labelledby="pipeline-title">
+          <div class="section-heading compact-heading">
+            <p class="section-label">Analysis Pipeline</p>
+            <h2 id="pipeline-title">From public transcriptomes to regional interpretation</h2>
+          </div>
+          <ol class="pipeline-flow" aria-label="Computational analysis pipeline">
+            <li>
+              <span class="pipeline-step">01</span>
+              <h3>Acquire MTG scRNA-seq</h3>
+              <p>SEA-AD and CellxGene microglial transcriptomes.</p>
+            </li>
+            <li>
+              <span class="pipeline-step">02</span>
+              <h3>Quality Control</h3>
+              <p>Filter with detected genes, total UMIs, and mitochondrial fraction.</p>
+            </li>
+            <li>
+              <span class="pipeline-step">03</span>
+              <h3>Expression Testing</h3>
+              <p>Differential expression and volcano visualization by cell type.</p>
+            </li>
+            <li>
+              <span class="pipeline-step">04</span>
+              <h3>Pathway Enrichment</h3>
+              <p>GO Biological Process GSEA with FDR-based filtering.</p>
+            </li>
+            <li>
+              <span class="pipeline-step">05</span>
+              <h3>Subtype Mapping</h3>
+              <p>Scanpy, HVGs, UMAP, Leiden clustering, and donor integration.</p>
+            </li>
+            <li>
+              <span class="pipeline-step">06</span>
+              <h3>Disease Comparison</h3>
+              <p>Control versus Alzheimer’s microglial state interpretation.</p>
+            </li>
+          </ol>
+        </section>
+        <div class="research-figure-grid">
+          <article class="research-figure">
+            <div class="figure-copy">
+              <p class="section-label">Figure 3</p>
+              <h3>Quality-control metrics</h3>
+              <p>Violin plots summarize detected genes, total UMIs, and mitochondrial UMI fraction for MTG microglial cells.</p>
+              <a class="text-link" href="assets/violin-final.pdf" target="_blank" rel="noreferrer">Open original PDF</a>
+            </div>
+            <img src="assets/violin-final.png" alt="Quality-control violin plots for single-cell RNA-seq data">
+          </article>
+          <article class="research-figure">
+            <div class="figure-copy">
+              <p class="section-label">Figure 4</p>
+              <h3>Microglial subtype structure</h3>
+              <p>UMAP and Leiden clustering show donor distributions, microglial identity confirmation, and ten microglial subtypes.</p>
+              <a class="text-link" href="assets/subtypes-final.pdf" target="_blank" rel="noreferrer">Open original PDF</a>
+            </div>
+            <img src="assets/subtypes-final.png" alt="UMAP clustering and subtype annotation of microglial cells">
+          </article>
+        </div>
+      </section>
+
+      <section class="section figure-section tab-panel" id="figures" aria-labelledby="figures-title" role="tabpanel" data-panel="figures" hidden>
+        <div class="section-heading">
+          <p class="section-label">Figures</p>
+          <h2 id="figures-title">Figure catalog and analytical role</h2>
+        </div>
+        <div class="figure-table" role="table" aria-label="Figure catalog">
+          <div class="figure-row header" role="row">
+            <span role="columnheader">Figure</span>
+            <span role="columnheader">Evidence Type</span>
+            <span role="columnheader">Purpose</span>
+          </div>
+          <div class="figure-row" role="row">
+            <span role="cell">Figure 1</span>
+            <span role="cell">GO Biological Process GSEA</span>
+            <span role="cell">Compares immune, synaptic, differentiation, and exocytosis pathways across microglia and neurons.</span>
+          </div>
+          <div class="figure-row" role="row">
+            <span role="cell">Figure 2</span>
+            <span role="cell">Differential expression volcano plots</span>
+            <span role="cell">Contrasts gene-level expression patterns in neurons and microglia using effect size and adjusted p-value thresholds.</span>
+          </div>
+          <div class="figure-row" role="row">
+            <span role="cell">Figure 3</span>
+            <span role="cell">Quality-control violin plots</span>
+            <span role="cell">Summarizes detected genes, total UMIs, and mitochondrial UMI fraction for MTG microglial cells.</span>
+          </div>
+          <div class="figure-row" role="row">
+            <span role="cell">Figure 4</span>
+            <span role="cell">UMAP clustering and annotation</span>
+            <span role="cell">Shows donor distributions, microglial identity confirmation, and ten microglial subtypes.</span>
+          </div>
+          <div class="figure-row" role="row">
+            <span role="cell">Figure 5</span>
+            <span role="cell">Disease-control UMAP comparison</span>
+            <span role="cell">Visualizes control, Alzheimer’s disease, and combined disease-status microglial distributions.</span>
+          </div>
+        </div>
+        <div class="complete-gallery" aria-label="Research figure gallery">
+          <article>
+            <img src="assets/gsea-final.png" alt="Figure 1 GSEA panels">
+            <h3>Figure 1. GSEA Pathways</h3>
+            <p>Immune, synaptic, differentiation, and exocytosis pathway comparisons.</p>
+          </article>
+          <article>
+            <img src="assets/volcano-final.png" alt="Figure 2 volcano plots">
+            <h3>Figure 2. Volcano Plots</h3>
+            <p>Gene-level differential expression in neurons and microglia.</p>
+          </article>
+          <article>
+            <img src="assets/violin-final.png" alt="Figure 3 quality control violin plots">
+            <h3>Figure 3. Quality Control</h3>
+            <p>Detected genes, total UMIs, and mitochondrial UMI fraction.</p>
+          </article>
+          <article>
+            <img src="assets/subtypes-final.png" alt="Figure 4 microglial subtype UMAP">
+            <h3>Figure 4. Microglial Subtypes</h3>
+            <p>UMAP clustering, donor integration, and subtype labels.</p>
+          </article>
+          <article>
+            <img src="assets/disease-status-umap.png" alt="Figure 5 disease status UMAP comparing control and Alzheimer's microglia">
+            <h3>Figure 5. Disease Status UMAP</h3>
+            <p>Control, Alzheimer’s, and combined disease-status microglial distributions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section manuscript-section tab-panel" id="manuscript" aria-labelledby="manuscript-title" role="tabpanel" data-panel="manuscript" hidden>
+        <div class="section-heading">
+          <p class="section-label">Manuscript</p>
+          <h2 id="manuscript-title">Read or download the submitted document</h2>
+        </div>
+        <div class="manuscript-shell">
+          <object data="assets/manuscript.pdf" type="application/pdf" aria-label="Embedded manuscript PDF">
+            <p>The manuscript PDF is available for download.</p>
+          </object>
+          <div class="download-panel">
+            <h3>Publication Package</h3>
+            <p>Use this PDF as the source manuscript file. The surrounding website provides a public-facing data architecture and reader-friendly interpretation of the study.</p>
+            <a class="button primary" href="assets/manuscript.pdf" download>Download Manuscript</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section references-section tab-panel" id="references" aria-labelledby="references-title" role="tabpanel" data-panel="references" hidden>
+        <div class="section-heading">
+          <p class="section-label">References</p>
+          <h2 id="references-title">Complete citation library</h2>
+        </div>
+        <div class="reference-tools" aria-label="Reference categories">
+          <span>Neurodegeneration</span>
+          <span>Microglia</span>
+          <span>Single-cell RNA-seq</span>
+          <span>Regional brain biology</span>
+        </div>
+        <ol class="reference-list">
+          <li>Agrawal, Ishan, and Sushmita Jha. “Mitochondrial Dysfunction and Alzheimer’s Disease: Role of Microglia.” <em>Frontiers in Aging Neuroscience</em>, vol. 12, Aug. 2020, p. 252. https://doi.org/10.3389/fnagi.2020.00252.</li>
+          <li>American Brain Foundation. <em>Disease Connections: Alzheimer’s and Parkinson’s</em>. 6 Feb. 2024, https://www.americanbrainfoundation.org/disease-connections-alzheimers-and-parkinsons/.</li>
+          <li>Bachstetter, Adam D., et al. “Disease-Related Microglia Heterogeneity in the Hippocampus of Alzheimer’s Disease, Dementia with Lewy Bodies, and Hippocampal Sclerosis of Aging.” <em>Acta Neuropathologica Communications</em>, vol. 3, no. 1, May 2015, p. 32. https://doi.org/10.1186/s40478-015-0209-z.</li>
+          <li>Gabitto, Mariano I., et al. “Integrated Multimodal Cell Atlas of Alzheimer’s Disease.” <em>Nature Neuroscience</em>, vol. 27, no. 12, Dec. 2024, pp. 2366-83. https://doi.org/10.1038/s41593-024-01774-5.</li>
+          <li>Gjoneska, Elizabeta, et al. “Conserved Epigenomic Signals in Mice and Humans Reveal Immune Basis of Alzheimer’s Disease.” <em>Nature</em>, vol. 518, no. 7539, Feb. 2015, pp. 365-69. https://doi.org/10.1038/nature14252.</li>
+          <li>Hammond, Timothy R., et al. “Single-Cell RNA Sequencing of Microglia throughout the Mouse Lifespan and in the Injured Brain Reveals Complex Cell-State Changes.” <em>Immunity</em>, vol. 50, no. 1, Jan. 2019, pp. 253-271.e6. https://doi.org/10.1016/j.immuni.2018.11.004.</li>
+          <li>Ilicic, Tomislav, et al. “Classification of Low Quality Cells from Single-Cell RNA-Seq Data.” <em>Genome Biology</em>, vol. 17, no. 1, Feb. 2016, p. 29. https://doi.org/10.1186/s13059-016-0888-1.</li>
+          <li>Kim, Kyoung Mi, et al. “Mitochondrial RNA in Alzheimer’s Disease Circulating Extracellular Vesicles.” <em>Frontiers in Cell and Developmental Biology</em>, vol. 8, Nov. 2020. https://doi.org/10.3389/fcell.2020.581882.</li>
+          <li>Lovinger, David M. “Neurotransmitter Roles in Synaptic Modulation, Plasticity and Learning in the Dorsal Striatum.” <em>Neuropharmacology</em>, vol. 58, no. 7, June 2010, pp. 951-61. https://doi.org/10.1016/j.neuropharm.2010.01.008.</li>
+          <li>Mayo Clinic. <em>Alzheimer’s Disease - Symptoms and Causes</em>. https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/symptoms-causes/syc-20350447. Accessed 12 Jan. 2026.</li>
+          <li>National Institute of Neurological Disorders and Stroke. “Parkinson’s Disease.” <em>National Institute of Neurological Disorders and Stroke</em>, https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease. Accessed 12 Jan. 2026.</li>
+          <li>Olah, Marta, et al. “Single Cell RNA Sequencing of Human Microglia Uncovers a Subset Associated with Alzheimer’s Disease.” <em>Nature Communications</em>, vol. 11, no. 1, Nov. 2020, p. 6129. https://doi.org/10.1038/s41467-020-19737-2.</li>
+          <li>Pfeil, Julia, et al. “Unique Regional Patterns of Amyloid Burden Predict Progression to Prodromal and Clinical Stages of Alzheimer’s Disease.” <em>Neurobiology of Aging</em>, vol. 106, Oct. 2021, p. 119. https://doi.org/10.1016/j.neurobiolaging.2021.06.014.</li>
+          <li>Prater, Katherine E., et al. “Human Microglia Show Unique Transcriptional Changes in Alzheimer’s Disease.” <em>Nature Aging</em>, vol. 3, no. 7, July 2023, pp. 894-907. https://doi.org/10.1038/s43587-023-00424-y.</li>
+          <li>Salta, Evgenia, et al. “Adult Hippocampal Neurogenesis in Alzheimer’s Disease: A Roadmap to Clinical Relevance.” <em>Cell Stem Cell</em>, vol. 30, no. 2, Feb. 2023, pp. 120-36. https://doi.org/10.1016/j.stem.2023.01.002.</li>
+          <li>Science Direct. <em>Middle Temporal Gyrus - an Overview</em>. https://www.sciencedirect.com/topics/neuroscience/middle-temporal-gyrus. Accessed 12 Jan. 2026.</li>
+          <li>Stratoulias, Vassilis, et al. “Microglial Subtypes: Diversity within the Microglial Community.” <em>The EMBO Journal</em>, vol. 38, no. 17, Sept. 2019, p. e101997. https://doi.org/10.15252/embj.2019101997.</li>
+          <li>Sun, Na, et al. “Human Microglial State Dynamics in Alzheimer’s Disease Progression.” <em>Cell</em>, vol. 186, no. 20, Sept. 2023, pp. 4386-4403.e29. https://doi.org/10.1016/j.cell.2023.08.037.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Region-Specific Microglial Immune Activation in Alzheimer’s Disease</p>
+      <a href="?tab=findings" data-tab="findings">Research overview</a>
+    </footer>
+
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" async></script>
+    <script src="script.js?v=final-polish1"></script>
+  </body>
+</html>
